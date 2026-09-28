@@ -268,7 +268,7 @@ async function run() {
 
   Object.entries(CATEGORIES).forEach(([name, [crop, tone]]) => {
     tasks.push(
-      make(`categories/${name}.jpg`, crop, { tone: TONES[tone], width: 900, height: 675 }),
+      make(`categories/${name}.jpg`, crop, { tone: TONES[tone], width: 800, height: 1000 }),
     );
   });
 
@@ -279,7 +279,7 @@ async function run() {
   });
 
   Object.entries(SETS).forEach(([name, [crop, tone]]) => {
-    tasks.push(make(`sets/${name}.jpg`, crop, { tone: TONES[tone], width: 900, height: 675 }));
+    tasks.push(make(`sets/${name}.jpg`, crop, { tone: TONES[tone], width: 800, height: 1000 }));
   });
 
   const sizes = await Promise.all(tasks);
