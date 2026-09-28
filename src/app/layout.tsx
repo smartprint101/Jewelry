@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     description: siteConfig.shortDescription,
     images: [
       {
-        url: "/brand/hero.jpg",
+        url: "/brand/og.jpg",
         width: 1200,
         height: 630,
         alt: `${siteConfig.name} প্রিমিয়াম জুয়েলারি কালেকশন`,
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${siteConfig.name} — প্রিমিয়াম জুয়েলারি`,
     description: siteConfig.shortDescription,
-    images: ["/brand/hero.jpg"],
+    images: ["/brand/og.jpg"],
   },
   robots: { index: true, follow: true },
 };

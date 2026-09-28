@@ -114,6 +114,7 @@ const C = {
   pack2Full: [S.pack2, 0.03, 0.03, 0.94, 0.94],
   pack2Tight: [S.pack2, 0.16, 0.16, 0.66, 0.66],
   heroRight: [S.hero, 0.35, 0.05, 0.6, 0.9],
+  heroWide: [S.hero, 0.0, 0.03, 1.0, 0.94],
 };
 
 /** ম্যাটেরিয়াল অনুযায়ী টোন */
@@ -332,6 +333,9 @@ async function run() {
   Object.entries(SETS).forEach(([name, [crop, tone]]) => {
     tasks.push(make(`sets/${name}.jpg`, crop, { tone: TONES[tone], width: 800, height: 1000 }));
   });
+
+  // সোশ্যাল শেয়ার (Open Graph) ইমেজ
+  tasks.push(make("brand/og.jpg", C.heroWide, { tone: TONES.gold, width: 1200, height: 630 }));
 
   const sizes = await Promise.all(tasks);
   const bytes = sizes.reduce((sum, size) => sum + size, 0);
