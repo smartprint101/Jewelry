@@ -31,6 +31,16 @@ const S = {
   pendant: "pendant.jpg",
   set: "bridal-set.jpg",
   nosePin: "nose-pin.jpg",
+  mensChain: "mens-chain.jpg",
+  mensBracelet: "mens-bracelet.jpg",
+  signetRing: "signet-ring.jpg",
+  coupleRings: "couple-rings.jpg",
+  hoopEarring: "hoop-earring.jpg",
+  anklet: "anklet.jpg",
+  layeredNecklace: "layered-necklace.jpg",
+  heartPendant: "heart-pendant.jpg",
+  pearlBracelet: "pearl-bracelet.jpg",
+  bangleSet: "bangle-set.jpg",
   // লাইফস্টাইল / ব্র্যান্ড
   hand: "ring-hand.jpg",
   neck: "necklace-neck.jpg",
@@ -89,6 +99,28 @@ const C = {
   // নোজ পিন
   nosePinFull: [S.nosePin, 0.04, 0.04, 0.92, 0.92],
   nosePinZoom: [S.nosePin, 0.16, 0.2, 0.56, 0.56],
+
+  // মেনস, কাপল ও অন্যান্য
+  mensChainFull: [S.mensChain, 0.04, 0.04, 0.92, 0.92],
+  mensChainZoom: [S.mensChain, 0.14, 0.14, 0.58, 0.58],
+  mensBraceletFull: [S.mensBracelet, 0.03, 0.03, 0.94, 0.94],
+  mensBraceletZoom: [S.mensBracelet, 0.12, 0.18, 0.58, 0.58],
+  signetFull: [S.signetRing, 0.04, 0.04, 0.92, 0.92],
+  signetMacro: [S.signetRing, 0.22, 0.14, 0.5, 0.5],
+  coupleFull: [S.coupleRings, 0.04, 0.06, 0.92, 0.92],
+  coupleZoom: [S.coupleRings, 0.16, 0.14, 0.6, 0.6],
+  hoopFull: [S.hoopEarring, 0.04, 0.04, 0.92, 0.92],
+  hoopZoom: [S.hoopEarring, 0.14, 0.18, 0.6, 0.6],
+  ankletFull: [S.anklet, 0.03, 0.03, 0.94, 0.94],
+  ankletZoom: [S.anklet, 0.14, 0.16, 0.58, 0.58],
+  layeredFull: [S.layeredNecklace, 0.03, 0.03, 0.94, 0.94],
+  layeredZoom: [S.layeredNecklace, 0.12, 0.14, 0.6, 0.6],
+  heartFull: [S.heartPendant, 0.04, 0.04, 0.92, 0.92],
+  heartZoom: [S.heartPendant, 0.2, 0.22, 0.5, 0.5],
+  pearlBraceletFull: [S.pearlBracelet, 0.03, 0.03, 0.94, 0.94],
+  pearlBraceletZoom: [S.pearlBracelet, 0.14, 0.16, 0.58, 0.58],
+  bangleSetFull: [S.bangleSet, 0.03, 0.03, 0.94, 0.94],
+  bangleSetZoom: [S.bangleSet, 0.14, 0.2, 0.58, 0.58],
 
   // পরিহিত অবস্থা (লাইফস্টাইল)
   handRing: [S.hand, 0.33, 0.17, 0.65, 0.65],
@@ -195,31 +227,31 @@ const PRODUCTS = {
   "rubaiya-pearl-necklace": [C.pearlFull, C.pearlZoom, C.pack1Tight],
   "nilima-silver-necklace": [C.necklaceZoom, C.necklaceFull, C.pack2Tight],
   "aditi-choker": [C.setNecklace, C.bridalWorn, C.pack1Full],
-  "suraiya-layered-necklace": [C.necklaceFull, C.boxNecklace, C.pack2Full],
+  "suraiya-layered-necklace": [C.layeredFull, C.layeredZoom, C.pack2Full],
 
   // ইয়াররিং
   "zara-pearl-earring": [C.studFull, C.studZoom, C.pack1Full],
   "nowshin-jhumka": [C.jhumkaFull, C.earWorn, C.pack2Full],
   "ilma-diamond-stud": [C.studZoom, C.studTight, C.pack1Tight],
-  "tanisha-hoop-earring": [C.studTight, C.studFull, C.pack2Tight],
+  "tanisha-hoop-earring": [C.hoopFull, C.hoopZoom, C.pack2Tight],
   "priya-silver-earring": [C.jhumkaZoom, C.jhumkaTight, C.pack1Full],
 
   // ব্রেসলেট
   "nabila-bracelet": [C.braceletFull, C.braceletZoom, C.pack1Full],
   "raisa-diamond-bracelet": [C.braceletZoom, C.braceletTight, C.pack2Full],
   "aroni-silver-bracelet": [C.braceletFull, C.braceletTight, C.pack1Tight],
-  "maya-pearl-bracelet": [C.pearlTight, C.braceletZoom, C.pack2Tight],
+  "maya-pearl-bracelet": [C.pearlBraceletFull, C.pearlBraceletZoom, C.pack2Tight],
 
   // চুড়ি
   "konok-gold-bangle": [C.bangleFull, C.banglesWorn, C.pack1Full],
-  "shreya-bangle-set": [C.bangleZoom, C.banglesWorn, C.pack2Full],
+  "shreya-bangle-set": [C.bangleSetFull, C.banglesWorn, C.pack2Full],
   "rupali-silver-bangle": [C.bangleFull, C.bangleTight, C.pack1Tight],
-  "joyita-kada": [C.bangleTight, C.bangleZoom, C.pack2Tight],
+  "joyita-kada": [C.bangleZoom, C.bangleSetZoom, C.pack2Tight],
 
   // পেনডেন্ট
   "ruhi-pendant-set": [C.pendantFull, C.neckPendant, C.pack1Full],
   "ayesha-diamond-pendant": [C.pendantZoom, C.pendantTight, C.pack2Full],
-  "lamia-heart-pendant": [C.pendantTight, C.neckChain, C.pack1Tight],
+  "lamia-heart-pendant": [C.heartFull, C.heartZoom, C.pack1Tight],
   "tuba-silver-pendant": [C.pendantFull, C.pendantZoom, C.pack2Tight],
 
   // নোজ পিন
@@ -228,20 +260,20 @@ const PRODUCTS = {
   "riya-silver-nose-pin": [C.nosePinFull, C.nosePinZoom, C.pack1Tight],
 
   // অ্যাঙ্কলেট
-  "payel-silver-anklet": [C.braceletFull, C.braceletZoom, C.pack2Full],
-  "nupur-gold-anklet": [C.braceletZoom, C.braceletTight, C.pack1Full],
-  "tithi-pearl-anklet": [C.pearlZoom, C.braceletFull, C.pack2Tight],
+  "payel-silver-anklet": [C.ankletFull, C.ankletZoom, C.pack2Full],
+  "nupur-gold-anklet": [C.braceletTight, C.braceletFull, C.pack1Full],
+  "tithi-pearl-anklet": [C.pearlBraceletZoom, C.ankletFull, C.pack2Tight],
 
   // মেনস
-  "mahir-mens-ring": [C.ringSide, C.ringFull, C.pack1Full],
-  "arian-mens-chain": [C.necklaceZoom, C.necklaceFull, C.pack2Full],
-  "rayhan-mens-bracelet": [C.braceletZoom, C.braceletFull, C.pack1Tight],
-  "zubayer-signet-ring": [C.ringMacro, C.handRing, C.pack2Tight],
+  "mahir-mens-ring": [C.coupleZoom, C.handRing, C.pack1Full],
+  "arian-mens-chain": [C.mensChainFull, C.mensChainZoom, C.pack2Full],
+  "rayhan-mens-bracelet": [C.mensBraceletFull, C.mensBraceletZoom, C.pack1Tight],
+  "zubayer-signet-ring": [C.signetFull, C.signetMacro, C.pack2Tight],
 
   // কাপল
-  "onuvob-couple-ring": [C.ringFull, C.dRingSide, C.pack1Full],
-  "bondhon-couple-bracelet": [C.braceletFull, C.braceletTight, C.pack2Full],
-  "protishruti-couple-pendant": [C.pendantZoom, C.neckPendant, C.pack1Tight],
+  "onuvob-couple-ring": [C.coupleFull, C.coupleZoom, C.pack1Full],
+  "bondhon-couple-bracelet": [C.braceletZoom, C.mensBraceletZoom, C.pack2Full],
+  "protishruti-couple-pendant": [C.heartZoom, C.neckPendant, C.pack1Tight],
 
   // সেট
   "rajkonna-bridal-set": [C.setFull, C.bridalWorn, C.pack1Full],
@@ -254,11 +286,11 @@ const PRODUCTS = {
 const VARIANTS = {
   "tasnim-rose-gold-ring-gold": [C.ringSide, "gold"],
   "tasnim-rose-gold-ring-silver": [C.dRingSide, "silver"],
-  "suraiya-layered-necklace-silver": [C.necklaceFull, "silver"],
-  "tanisha-hoop-earring-silver": [C.studTight, "silver"],
+  "suraiya-layered-necklace-silver": [C.layeredFull, "silver"],
+  "tanisha-hoop-earring-silver": [C.hoopZoom, "silver"],
   "nabila-bracelet-rose": [C.braceletFull, "rose"],
-  "lamia-heart-pendant-gold": [C.pendantTight, "gold"],
-  "rayhan-mens-bracelet-silver": [C.braceletZoom, "silver"],
+  "lamia-heart-pendant-gold": [C.heartZoom, "gold"],
+  "rayhan-mens-bracelet-silver": [C.mensBraceletFull, "silver"],
 };
 
 /** ক্যাটাগরি টাইল — ৪:৫ পোর্ট্রেট */
@@ -270,9 +302,9 @@ const CATEGORIES = {
   bangle: [C.bangleFull, "gold"],
   pendant: [C.neckPendant, "gold"],
   "nose-pin": [C.nosePinFull, "gold"],
-  anklet: [C.braceletZoom, "silver"],
-  mens: [C.necklaceZoom, "mens"],
-  couple: [C.handRing, "gold"],
+  anklet: [C.ankletFull, "silver"],
+  mens: [C.mensChainFull, "mens"],
+  couple: [C.coupleFull, "gold"],
   set: [C.bridalWide, "gold"],
 };
 
@@ -288,7 +320,7 @@ const COLLECTIONS = {
 /** সেট কার্ড — ৪:৫ পোর্ট্রেট */
 const SETS = {
   "necklace-earring": [C.setFull, "gold"],
-  "ring-bracelet": [C.handRing, "gold"],
+  "ring-bracelet": [C.coupleFull, "gold"],
   "bridal-set": [C.bridalWide, "gold"],
   "gift-set": [C.pack1Full, "gold"],
 };
